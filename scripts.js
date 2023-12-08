@@ -37,40 +37,53 @@
   
 //   console.log(findWord("The quick brown fox jumped over the lazy dog"));
 
-const formatString = function (string) {
-    const maxLength = 40;
+//Завдання 3 (3-бали)
+
+// Напиши функцію `formatString(string)` яка приймає рядок і форматує його якщо
+// необхідно.
+
+// - Якщо довжина рядка не перевищує `40 символів`, функція повертає її в
+//   початковому   вигляді.
+// - Якщо довжина більше `40 символів`, то функція обрізає рядок до 40-ка символів
+//   і додає в кінець рядка три крапки `'...'`, після чого повертає   укорочену
+//   версію.
+
+// const formatString = function (string) {
+//     const maxLength = 40;
   
-    if (string.length <= maxLength) {
-      // Рядок не потребує обрізання
-      return string;
-    } else {
-      // Обрізати рядок до 40 символів та додати три крапки
-      const truncatedString = string.slice(0, maxLength - 3) + '...';
-      return truncatedString;
-    }
-  };
+//     if (string.length <= maxLength) {
+ 
+//       return string;
+//     } else {
+    
+//       const truncatedString = string.slice(0, maxLength - 3) + '...';
+//       return truncatedString;
+//     }
+//   };
   
-  // Приклад використання
-  console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+//   // Приклад використання
+//   console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 
 
+// Завдання 4 (4 бали)
 //   Напиши функцію `checkForSpam(message)`, приймаючу 1 параметр `message` - рядок.
 // Функція перевіряє її на вміст слів `spam` і `sale`. Якщо знайшли заборонене
 // слово, то функція повертає `true`, якщо заборонених слів немає функція повертає
 // `false`. Слова в рядку можуть бути в довільному регістрі.
 
 
-const checkForSpam = function (message) {
+
+// const checkForSpam = function (message) {
   
-    const lowerCaseMessage = message.toLowerCase();
+//     const lowMessage = message.toLowerCase();
   
 
-    return lowerCaseMessage.includes('spam') || lowerCaseMessage.includes('sale');
-  };
+//     return lowMessage.includes('spam') || lowMessage.includes('sale');
+//   };
 
 
-  console.log(checkForSpam("Latest technology news")); 
+//   console.log(checkForSpam("Latest technology news")); 
 
-console.log(checkForSpam("JavaScript weekly newsletter")); 
+// console.log(checkForSpam("JavaScript weekly newsletter")); 
 
-console.log(checkForSpam("Get best sale offers now!")); 
+// console.log(checkForSpam("Get best sale offers now!")); 
